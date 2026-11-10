@@ -20,7 +20,7 @@ Enable the plugin from the consuming repository's ``conftest.py``:
 
    pytest_plugins = ["testplan.pytest_plugin"]
 
-Mark each test with the authored specification it executes:
+Mark each test with the authored test specification it executes:
 
 .. code-block:: python
 
@@ -32,8 +32,8 @@ Mark each test with the authored specification it executes:
        pass
 
 The plugin writes a ``verifies`` property identifying the authored test
-specification to each test case in the JUnit report. The authored ``spec`` need
-owns the ``specifies`` links to requirements, so requirement traceability is
+specification to each test case in the JUnit report. The authored ``test-spec``
+need owns the ``specifies`` links to requirements, so requirement traceability is
 defined once in the test plan rather than repeated in Python markers.
 
 ***********************
